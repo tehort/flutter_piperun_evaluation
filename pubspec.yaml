@@ -1,0 +1,24 @@
+name: piperun
+description: A new Flutter project.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.3.0 <3.0.0"
+
+dependencies:
+  intl: ^0.16.0
+  dio: ^2.1.16
+  get_it: ^3.0.0+1
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+  assets:
+   - resources/
