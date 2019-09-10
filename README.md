@@ -15,8 +15,11 @@ Para conexao com as APIs foi utilizado o plugin DIO, para controle de tokens, en
 O app foi organizado de maneira similar ao MVVM utilizado no Xamarin:
 
 A Pasta views contém as views (páginas e user interfaces) da aplicação, juntamente das ViewModels(controlam o estado da View, eventos (botoes, etc), e variáveis);
+
 A Pasta services contém métodos e classes que podem ser utilizados por qualquer viewModel, como chamados de API e dialogs neste app, e em outros casos, armazenamento de configuracoes de usuarios e regras de negocio;
+
 A pasta models contém os modelos utilizados (PODO), e seus metodos para conversao JSON (toJson e fromJson), é utilizado serialização manual, pois bibliotecas de mapeamento automatico de JSON necessitam de geracao de código e nao permitem o debug em tempo real no caso de alteracoes do app;
+
 _shared contém a injecao de dependencia e estilos utilizado nos widgets do aplicativo
 
 todos os views possuem um routeName, para navegação de páginas através de rotas
